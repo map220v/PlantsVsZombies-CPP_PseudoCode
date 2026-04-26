@@ -7,6 +7,9 @@ https://oss.xy51.com/update/file/150724/zwdzjs2_phone_appbox_xiaoy_v_1663658690.
 
 https://oss.xy51.com/update/file/150724/zwdzjs2_phone_appbox_xiaoy_v_1663663474.apk
 
+# 2.9.8
+https://oss.xy51.com/xywy/game/b72d6555bd9649c8ae0cbc2d2a0dd7fb/apk/1670584256260_zwdzjs2_phone_haimayun_cloud_v_1670581077.apk
+
 # 3.0.6
 https://oss.xy51.com/test/zwdzjs_phone_test.apk
 
