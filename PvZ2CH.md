@@ -1,5 +1,12 @@
 All following versions have functions and some globals exported, so their names aren't stripped(except for non template std functions and .init_array ones), functions that are never called/referenced are also there(like PVZCheats functions), and fortunately there is no automatic inlining.
 
+<details>
+<summary>Screenshots</summary>
+<img src="https://github.com/user-attachments/assets/c014db81-7da4-4362-b0bd-a425219cd746"/>
+<img src="https://github.com/user-attachments/assets/fc36ae0a-01e1-434d-92f6-c48610c3a396"/>
+<img src="https://github.com/user-attachments/assets/352b5576-c7b1-4f92-ac6b-37b3f5cad8e0"/>
+</details>
+
 # 2.8.2
 https://oss.xy51.com/update/file/150724/native_game.apk
 
