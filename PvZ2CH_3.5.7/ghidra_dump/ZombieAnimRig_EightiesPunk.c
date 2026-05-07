@@ -1,0 +1,332 @@
+// Class: ZombieAnimRig_EightiesPunk
+
+
+/* ZombieAnimRig_EightiesPunk::StartJamming() */
+
+void __thiscall ZombieAnimRig_EightiesPunk::StartJamming(ZombieAnimRig_EightiesPunk *this)
+
+{
+  this[0x240] = (ZombieAnimRig_EightiesPunk)0x1;
+  return;
+}
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* ZombieAnimRig_EightiesPunk::getWalkAnimationName() */
+
+void ZombieAnimRig_EightiesPunk::getWalkAnimationName(void)
+
+{
+  long lVar1;
+  long in_x0;
+  char *__s;
+  string *in_x8;
+  
+  lVar1 = ___stack_chk_guard;
+  if (*(char *)(in_x0 + 0x240) == '\0') {
+    __s = "walk";
+  }
+  else {
+    __s = "walk_jam";
+  }
+  std::string::string(in_x8,__s);
+  nop();
+  if (lVar1 == ___stack_chk_guard) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(in_x8);
+}
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* ZombieAnimRig_EightiesPunk::getIdleAnimationName() */
+
+void ZombieAnimRig_EightiesPunk::getIdleAnimationName(void)
+
+{
+  long lVar1;
+  long in_x0;
+  char *__s;
+  string *in_x8;
+  
+  lVar1 = ___stack_chk_guard;
+  if (*(char *)(in_x0 + 0x240) == '\0') {
+    __s = "idle";
+  }
+  else {
+    __s = "idle_jam";
+  }
+  std::string::string(in_x8,__s);
+  nop();
+  if (lVar1 == ___stack_chk_guard) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(in_x8);
+}
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* ZombieAnimRig_EightiesPunk::StaticClassInit() */
+
+void ZombieAnimRig_EightiesPunk::StaticClassInit(void)
+
+{
+  CRefSymbolDb *this;
+  long *plVar1;
+  code *pcVar2;
+  string asStack_10 [8];
+  long local_8;
+  
+  local_8 = ___stack_chk_guard;
+  this = (CRefSymbolDb *)Reflection::CRefSymbolDb::GetManualReflection();
+  if ((this != (CRefSymbolDb *)0x0) &&
+     (plVar1 = (long *)Reflection::CRefSymbolDb::GetManualSymbolBuilder(this), plVar1 != (long *)0x0
+     )) {
+    pcVar2 = *(code **)(*plVar1 + 0x18);
+    std::string::string(asStack_10,"ZombieAnimRig_EightiesPunk");
+    (*pcVar2)(plVar1,asStack_10,FUN_047ecbd4,0x248,0);
+    std::string::~string(asStack_10);
+    nop();
+  }
+  if (local_8 == ___stack_chk_guard) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail();
+}
+
+
+/* ZombieAnimRig_EightiesPunk::StaticGetClass() */
+
+long * ZombieAnimRig_EightiesPunk::StaticGetClass(void)
+
+{
+  long *plVar1;
+  undefined8 uVar2;
+  code *pcVar3;
+  
+  if (sClass != (long *)0x0) {
+    return sClass;
+  }
+  plVar1 = (long *)Sexy::RtClass::StaticNew();
+  pcVar3 = *(code **)(*plVar1 + 0x50);
+  sClass = plVar1;
+  uVar2 = ZombieAnimRig::StaticGetClass();
+  (*pcVar3)(plVar1,"ZombieAnimRig_EightiesPunk",uVar2,StaticNew);
+  StaticClassInit();
+  return sClass;
+}
+
+
+/* ZombieAnimRig_EightiesPunk::GetClass() const */
+
+long * ZombieAnimRig_EightiesPunk::GetClass(void)
+
+{
+  long *plVar1;
+  undefined8 uVar2;
+  code *pcVar3;
+  
+  if (sClass != (long *)0x0) {
+    return sClass;
+  }
+  plVar1 = (long *)Sexy::RtClass::StaticNew();
+  pcVar3 = *(code **)(*plVar1 + 0x50);
+  sClass = plVar1;
+  uVar2 = ZombieAnimRig::StaticGetClass();
+  (*pcVar3)(plVar1,"ZombieAnimRig_EightiesPunk",uVar2,StaticNew);
+  StaticClassInit();
+  return sClass;
+}
+
+
+/* ZombieAnimRig_EightiesPunk::~ZombieAnimRig_EightiesPunk() */
+
+void __thiscall
+ZombieAnimRig_EightiesPunk::~ZombieAnimRig_EightiesPunk(ZombieAnimRig_EightiesPunk *this)
+
+{
+  *(undefined ***)this = &PTR_GetClass_068f5420;
+  *(undefined ***)(this + 0x10) = &PTR__ZombieAnimRig_EightiesPunk_068f5698;
+  ZombieAnimRig::~ZombieAnimRig((ZombieAnimRig *)this);
+  return;
+}
+
+
+/* non-virtual thunk to ZombieAnimRig_EightiesPunk::~ZombieAnimRig_EightiesPunk() */
+
+void __thiscall
+ZombieAnimRig_EightiesPunk::~ZombieAnimRig_EightiesPunk(ZombieAnimRig_EightiesPunk *this)
+
+{
+  ~ZombieAnimRig_EightiesPunk(this + -0x10);
+  return;
+}
+
+
+/* ZombieAnimRig_EightiesPunk::~ZombieAnimRig_EightiesPunk() */
+
+void __thiscall
+ZombieAnimRig_EightiesPunk::~ZombieAnimRig_EightiesPunk(ZombieAnimRig_EightiesPunk *this)
+
+{
+  ~ZombieAnimRig_EightiesPunk(this);
+  AK::FreeHook(this);
+  return;
+}
+
+
+/* non-virtual thunk to ZombieAnimRig_EightiesPunk::~ZombieAnimRig_EightiesPunk() */
+
+void __thiscall
+ZombieAnimRig_EightiesPunk::~ZombieAnimRig_EightiesPunk(ZombieAnimRig_EightiesPunk *this)
+
+{
+  ~ZombieAnimRig_EightiesPunk(this + -0x10);
+  return;
+}
+
+
+/* ZombieAnimRig_EightiesPunk::ZombieAnimRig_EightiesPunk() */
+
+void __thiscall
+ZombieAnimRig_EightiesPunk::ZombieAnimRig_EightiesPunk(ZombieAnimRig_EightiesPunk *this)
+
+{
+  ZombieAnimRig::ZombieAnimRig((ZombieAnimRig *)this);
+  this[0x240] = (ZombieAnimRig_EightiesPunk)0x0;
+  *(undefined ***)this = &PTR_GetClass_068f5420;
+  *(undefined ***)(this + 0x10) = &PTR__ZombieAnimRig_EightiesPunk_068f5698;
+  return;
+}
+
+
+/* ZombieAnimRig_EightiesPunk::StaticNew() */
+
+ZombieAnimRig_EightiesPunk * ZombieAnimRig_EightiesPunk::StaticNew(void)
+
+{
+  ZombieAnimRig_EightiesPunk *this;
+  
+  this = ::operator_new(0x248);
+  ZombieAnimRig_EightiesPunk(this);
+  return this;
+}
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* ZombieAnimRig_EightiesPunk::getHeadLayerNames() */
+
+void ZombieAnimRig_EightiesPunk::getHeadLayerNames(void)
+
+{
+  long lVar1;
+  int iVar2;
+  ulong uVar3;
+  
+  lVar1 = ___stack_chk_guard;
+  uVar3 = DAT_06b282d0 & 1;
+  if (((DAT_06b282d0 & 1) == 0) && (iVar2 = __cxa_guard_acquire(&DAT_06b282d0), iVar2 != 0)) {
+    std::string::string((string *)&DAT_06b28270,"zombie_skull");
+    nop();
+    std::string::string((string *)&DAT_06b28278,"zombie_jaw");
+    nop();
+    __cxa_guard_release(&DAT_06b282d0);
+    __cxa_atexit(FUN_047ec614,uVar3,&DAT_06a88000);
+  }
+  if (((DAT_06b28240 & 1) == 0) && (iVar2 = __cxa_guard_acquire(&DAT_06b28240), iVar2 != 0)) {
+    std::vector<std::string,std::allocator<std::string>>::vector<std::string*,void>
+              ((string *)&DAT_06b28310,(string *)&DAT_06b28270,(allocator *)&DAT_06b28280);
+    __cxa_guard_release(&DAT_06b28240);
+    __cxa_atexit(std::vector<std::string,std::allocator<std::string>>::~vector,&DAT_06b28310,
+                 &DAT_06a88000);
+  }
+  if (lVar1 == ___stack_chk_guard) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(&DAT_06b28310);
+}
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* ZombieAnimRig_EightiesPunk::getArmLayerNames() */
+
+void ZombieAnimRig_EightiesPunk::getArmLayerNames(void)
+
+{
+  long lVar1;
+  int iVar2;
+  ulong uVar3;
+  
+  lVar1 = ___stack_chk_guard;
+  uVar3 = DAT_06b28218 & 1;
+  if (((DAT_06b28218 & 1) == 0) && (iVar2 = __cxa_guard_acquire(&DAT_06b28218), iVar2 != 0)) {
+    std::string::string((string *)&DAT_06b28298,"zombie_hand_outer_01");
+    nop();
+    std::string::string((string *)&DAT_06b282a0,"zombie_hand_outer_02");
+    nop();
+    std::string::string((string *)&DAT_06b282a8,"zombie_hand_outer_03");
+    nop();
+    std::string::string((string *)&DAT_06b282b0,"zombie_hand_outer_04");
+    nop();
+    std::string::string((string *)&DAT_06b282b8,"zombie_arm_outer_lower");
+    nop();
+    std::string::string((string *)&DAT_06b282c0,"zombie_arm_outer_lower2");
+    nop();
+    std::string::string((string *)&DAT_06b282c8,"zombie_arm_outer_upper");
+    nop();
+    __cxa_guard_release(&DAT_06b28218);
+    __cxa_atexit(FUN_047ec640,uVar3,&DAT_06a88000);
+  }
+  if (((DAT_06b28238 & 1) == 0) && (iVar2 = __cxa_guard_acquire(&DAT_06b28238), iVar2 != 0)) {
+    std::vector<std::string,std::allocator<std::string>>::vector<std::string*,void>
+              ((string *)&DAT_06b282d8,(string *)&DAT_06b28298,(allocator *)&DAT_06b282d0);
+    __cxa_guard_release(&DAT_06b28238);
+    __cxa_atexit(std::vector<std::string,std::allocator<std::string>>::~vector,&DAT_06b282d8,
+                 &DAT_06a88000);
+  }
+  if (lVar1 == ___stack_chk_guard) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(&DAT_06b282d8);
+}
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* ZombieAnimRig_EightiesPunk::getArmReplacementPairNames() */
+
+void ZombieAnimRig_EightiesPunk::getArmReplacementPairNames(void)
+
+{
+  long lVar1;
+  int iVar2;
+  ulong uVar3;
+  
+  lVar1 = ___stack_chk_guard;
+  uVar3 = DAT_06b28308 & 1;
+  if (((DAT_06b28308 & 1) == 0) && (iVar2 = __cxa_guard_acquire(&DAT_06b28308), iVar2 != 0)) {
+    std::string::string((string *)&DAT_06b28328,"zombie_arms_outer_upper");
+    nop();
+    std::string::string((string *)&DAT_06b28330,"zombie_arm_outer_upper_bone");
+    nop();
+    __cxa_guard_release(&DAT_06b28308);
+    __cxa_atexit(FUN_047ec678,uVar3,&DAT_06a88000);
+  }
+  if (((DAT_06b28228 & 1) == 0) && (iVar2 = __cxa_guard_acquire(&DAT_06b28228), iVar2 != 0)) {
+    std::vector<std::string,std::allocator<std::string>>::vector<std::string*,void>
+              ((string *)&DAT_06b28338,(string *)&DAT_06b28328,(allocator *)&DAT_06b28338);
+    __cxa_guard_release(&DAT_06b28228);
+    __cxa_atexit(std::vector<std::string,std::allocator<std::string>>::~vector,&DAT_06b28338,
+                 &DAT_06a88000);
+  }
+  if (lVar1 == ___stack_chk_guard) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(&DAT_06b28338);
+}
+

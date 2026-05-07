@@ -1,0 +1,185 @@
+// Class: eastl::copy_generic_iterator<false,false>
+
+
+/* EA::Text::Analysis* eastl::copy_generic_iterator<false, false>::do_copy<EA::Text::Analysis*,
+   EA::Text::Analysis*>(EA::Text::Analysis*, EA::Text::Analysis*, EA::Text::Analysis*) */
+
+Analysis *
+eastl::copy_generic_iterator<false,false>::do_copy<EA::Text::Analysis*,EA::Text::Analysis*>
+          (Analysis *param_1,Analysis *param_2,Analysis *param_3)
+
+{
+  undefined8 uVar1;
+  Analysis *pAVar2;
+  Analysis *pAVar4;
+  Analysis *pAVar3;
+  
+  pAVar3 = param_1;
+  pAVar4 = param_3;
+  if (param_1 != param_2) {
+    do {
+      pAVar2 = pAVar3 + 0x10;
+      uVar1 = *(undefined8 *)(pAVar3 + 8);
+      *(undefined8 *)pAVar4 = *(undefined8 *)pAVar3;
+      *(undefined8 *)(pAVar4 + 8) = uVar1;
+      pAVar3 = pAVar2;
+      pAVar4 = pAVar4 + 0x10;
+    } while (param_2 != pAVar2);
+    param_3 = param_3 + ((long)param_2 - (long)(param_1 + 0x10) & 0xfffffffffffffff0U) + 0x10;
+  }
+  return param_3;
+}
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* eastl::generic_iterator<EA::Text::TextureInfo**, void> eastl::copy_generic_iterator<true,
+   true>::do_copy<eastl::generic_iterator<EA::Text::TextureInfo**, void>,
+   eastl::generic_iterator<EA::Text::TextureInfo**, void>
+   >(eastl::generic_iterator<EA::Text::TextureInfo**, void>,
+   eastl::generic_iterator<EA::Text::TextureInfo**, void>,
+   eastl::generic_iterator<EA::Text::TextureInfo**, void>) */
+
+void eastl::copy_generic_iterator<true,true>::
+     do_copy<eastl::generic_iterator<EA::Text::TextureInfo**,void>,eastl::generic_iterator<EA::Text::TextureInfo**,void>>
+               (void)
+
+{
+  undefined8 *extraout_x0;
+  undefined8 *extraout_x0_00;
+  undefined8 *extraout_x0_01;
+  TextureInfo **local_18;
+  undefined8 local_10;
+  long local_8;
+  
+  local_8 = ___stack_chk_guard;
+  nop();
+  nop();
+  nop();
+  local_18 = copy_chooser<EA::Text::TextureInfo**,EA::Text::TextureInfo**>
+                       ((TextureInfo **)*extraout_x0,(TextureInfo **)*extraout_x0_00,
+                        (TextureInfo **)*extraout_x0_01);
+  generic_iterator<EA::Text::TextureInfo**,void>::generic_iterator
+            ((generic_iterator<EA::Text::TextureInfo**,void> *)&local_10,&local_18);
+  if (local_8 == ___stack_chk_guard) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(local_10);
+}
+
+
+/* EA::Text::Typesetter::RunInfo* eastl::copy_generic_iterator<false,
+   false>::do_copy<EA::Text::Typesetter::RunInfo const*,
+   EA::Text::Typesetter::RunInfo*>(EA::Text::Typesetter::RunInfo const*,
+   EA::Text::Typesetter::RunInfo const*, EA::Text::Typesetter::RunInfo*) */
+
+RunInfo * eastl::copy_generic_iterator<false,false>::
+          do_copy<EA::Text::Typesetter::RunInfo_const*,EA::Text::Typesetter::RunInfo*>
+                    (RunInfo *param_1,RunInfo *param_2,RunInfo *param_3)
+
+{
+  RunInfo *pRVar1;
+  undefined8 uVar2;
+  RunInfo *pRVar3;
+  RunInfo *pRVar4;
+  
+  pRVar3 = param_1;
+  pRVar4 = param_3;
+  if (param_1 != param_2) {
+    do {
+      uVar2 = *(undefined8 *)(pRVar3 + 8);
+      pRVar1 = pRVar3 + 0x18;
+      *(undefined8 *)pRVar4 = *(undefined8 *)pRVar3;
+      *(undefined8 *)(pRVar4 + 8) = uVar2;
+      *(undefined8 *)(pRVar4 + 0x10) = *(undefined8 *)(pRVar3 + 0x10);
+      pRVar3 = pRVar1;
+      pRVar4 = pRVar4 + 0x18;
+    } while (param_2 != pRVar1);
+    param_3 = param_3 + ((((ulong)((long)param_2 - (long)(param_1 + 0x18)) >> 3) * 0xaaaaaaaaaaaaaab
+                         & 0x1fffffffffffffff) + 1) * 0x18;
+  }
+  return param_3;
+}
+
+
+/* EA::Text::OTFLookup** eastl::copy_generic_iterator<false, false>::do_copy<EA::Text::OTFLookup*
+   const*, EA::Text::OTFLookup**>(EA::Text::OTFLookup* const*, EA::Text::OTFLookup* const*,
+   EA::Text::OTFLookup**) */
+
+OTFLookup **
+eastl::copy_generic_iterator<false,false>::do_copy<EA::Text::OTFLookup*const*,EA::Text::OTFLookup**>
+          (OTFLookup **param_1,OTFLookup **param_2,OTFLookup **param_3)
+
+{
+  void *pvVar1;
+  
+  pvVar1 = memmove(param_3,param_1,(long)param_2 - (long)param_1);
+  return (OTFLookup **)((long)pvVar1 + ((long)param_2 - (long)param_1));
+}
+
+
+/* EA::Text::GlyphInfo* eastl::copy_generic_iterator<false, false>::do_copy<EA::Text::GlyphInfo
+   const*, EA::Text::GlyphInfo*>(EA::Text::GlyphInfo const*, EA::Text::GlyphInfo const*,
+   EA::Text::GlyphInfo*) */
+
+GlyphInfo *
+eastl::copy_generic_iterator<false,false>::do_copy<EA::Text::GlyphInfo_const*,EA::Text::GlyphInfo*>
+          (GlyphInfo *param_1,GlyphInfo *param_2,GlyphInfo *param_3)
+
+{
+  GlyphInfo *pGVar1;
+  GlyphInfo *pGVar3;
+  GlyphInfo *pGVar2;
+  
+  pGVar2 = param_1;
+  pGVar3 = param_3;
+  if (param_1 != param_2) {
+    do {
+      pGVar1 = pGVar2 + 4;
+      *(undefined4 *)pGVar3 = *(undefined4 *)pGVar2;
+      pGVar2 = pGVar1;
+      pGVar3 = pGVar3 + 4;
+    } while (param_2 != pGVar1);
+    param_3 = param_3 + ((long)param_2 - (long)(param_1 + 4) & 0xfffffffffffffffcU) + 4;
+  }
+  return param_3;
+}
+
+
+/* EA::Text::GlyphLayoutInfo* eastl::copy_generic_iterator<false,
+   false>::do_copy<EA::Text::GlyphLayoutInfo const*,
+   EA::Text::GlyphLayoutInfo*>(EA::Text::GlyphLayoutInfo const*, EA::Text::GlyphLayoutInfo const*,
+   EA::Text::GlyphLayoutInfo*) */
+
+GlyphLayoutInfo *
+eastl::copy_generic_iterator<false,false>::
+do_copy<EA::Text::GlyphLayoutInfo_const*,EA::Text::GlyphLayoutInfo*>
+          (GlyphLayoutInfo *param_1,GlyphLayoutInfo *param_2,GlyphLayoutInfo *param_3)
+
+{
+  GlyphLayoutInfo *pGVar1;
+  undefined8 uVar2;
+  GlyphLayoutInfo *pGVar3;
+  GlyphLayoutInfo *pGVar4;
+  
+  pGVar3 = param_1;
+  pGVar4 = param_3;
+  if (param_1 != param_2) {
+    do {
+      uVar2 = *(undefined8 *)(pGVar3 + 8);
+      *(undefined8 *)pGVar4 = *(undefined8 *)pGVar3;
+      *(undefined8 *)(pGVar4 + 8) = uVar2;
+      uVar2 = *(undefined8 *)(pGVar3 + 0x18);
+      pGVar1 = pGVar3 + 0x28;
+      *(undefined8 *)(pGVar4 + 0x10) = *(undefined8 *)(pGVar3 + 0x10);
+      *(undefined8 *)(pGVar4 + 0x18) = uVar2;
+      *(undefined8 *)(pGVar4 + 0x20) = *(undefined8 *)(pGVar3 + 0x20);
+      pGVar3 = pGVar1;
+      pGVar4 = pGVar4 + 0x28;
+    } while (param_2 != pGVar1);
+    param_3 = param_3 + ((((ulong)((long)param_2 - (long)(param_1 + 0x28)) >> 3) * 0xccccccccccccccd
+                         & 0x1fffffffffffffff) + 1) * 0x28;
+  }
+  return param_3;
+}
+

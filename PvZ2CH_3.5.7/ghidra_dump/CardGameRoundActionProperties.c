@@ -1,0 +1,137 @@
+// Class: CardGameRoundActionProperties
+
+
+/* CardGameRoundActionProperties::StaticNew() */
+
+undefined8 CardGameRoundActionProperties::StaticNew(void)
+
+{
+  return 0;
+}
+
+
+/* CardGameRoundActionProperties::~CardGameRoundActionProperties() */
+
+void __thiscall
+CardGameRoundActionProperties::~CardGameRoundActionProperties(CardGameRoundActionProperties *this)
+
+{
+  *(undefined ***)this = &PTR_GetClass_069d6190;
+  PropertySheetBase::~PropertySheetBase((PropertySheetBase *)this);
+  return;
+}
+
+
+/* CardGameRoundActionProperties::~CardGameRoundActionProperties() */
+
+void __thiscall
+CardGameRoundActionProperties::~CardGameRoundActionProperties(CardGameRoundActionProperties *this)
+
+{
+  ~CardGameRoundActionProperties(this);
+  AK::FreeHook(this);
+  return;
+}
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* CardGameRoundActionProperties::StaticClassInit() */
+
+void CardGameRoundActionProperties::StaticClassInit(void)
+
+{
+  CRefSymbolDb *pCVar1;
+  long *plVar2;
+  code *pcVar3;
+  undefined4 local_38 [2];
+  pair<std::string,unsigned_int> apStack_30 [16];
+  vector<Sexy::DataElement*,std::allocator<Sexy::DataElement*>> avStack_20 [24];
+  long local_8;
+  
+  local_8 = ___stack_chk_guard;
+  std::vector<Sexy::DataElement*,std::allocator<Sexy::DataElement*>>::vector(avStack_20);
+  local_38[0] = 0;
+  std::pair<std::string,unsigned_int>::
+  pair<char_const(&)[10],ZombieCarnieMagician::MagicianActionStatus,void>
+            (apStack_30,"zombie",(MagicianActionStatus *)local_38);
+  std::
+  vector<std::pair<std::string,unsigned_int>,std::allocator<std::pair<std::string,unsigned_int>>>::
+  push_back((vector<std::pair<std::string,unsigned_int>,std::allocator<std::pair<std::string,unsigned_int>>>
+             *)avStack_20,(pair *)apStack_30);
+  std::pair<std::string_const,Sexy::PILifeValueTable>::~pair
+            ((pair<std::string_const,Sexy::PILifeValueTable> *)apStack_30);
+  pCVar1 = (CRefSymbolDb *)Reflection::CRefSymbolDb::GetManualReflection();
+  if ((pCVar1 != (CRefSymbolDb *)0x0) &&
+     (plVar2 = (long *)Reflection::CRefSymbolDb::GetManualSymbolBuilder(pCVar1),
+     plVar2 != (long *)0x0)) {
+    pcVar3 = *(code **)(*plVar2 + 0x20);
+    std::string::string((string *)apStack_30,"CardGameRoundActionType");
+    (*pcVar3)(plVar2,apStack_30,avStack_20,0);
+    std::string::~string((string *)apStack_30);
+    nop();
+  }
+  std::
+  vector<std::pair<std::string,unsigned_int>,std::allocator<std::pair<std::string,unsigned_int>>>::
+  ~vector((vector<std::pair<std::string,unsigned_int>,std::allocator<std::pair<std::string,unsigned_int>>>
+           *)avStack_20);
+  pCVar1 = (CRefSymbolDb *)Reflection::CRefSymbolDb::GetManualReflection();
+  if ((pCVar1 != (CRefSymbolDb *)0x0) &&
+     (plVar2 = (long *)Reflection::CRefSymbolDb::GetManualSymbolBuilder(pCVar1),
+     plVar2 != (long *)0x0)) {
+    pcVar3 = *(code **)(*plVar2 + 0x18);
+    std::string::string((string *)avStack_20,"CardGameRoundActionProperties");
+    (*pcVar3)(plVar2,avStack_20,FUN_04e13454,0x18,0);
+    std::string::~string((string *)avStack_20);
+    nop();
+  }
+  if (local_8 == ___stack_chk_guard) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail();
+}
+
+
+/* CardGameRoundActionProperties::StaticGetClass() */
+
+long * CardGameRoundActionProperties::StaticGetClass(void)
+
+{
+  long *plVar1;
+  undefined8 uVar2;
+  code *pcVar3;
+  
+  if (sClass != (long *)0x0) {
+    return sClass;
+  }
+  plVar1 = (long *)Sexy::RtClass::StaticNew();
+  pcVar3 = *(code **)(*plVar1 + 0x50);
+  sClass = plVar1;
+  uVar2 = PropertySheetBase::StaticGetClass();
+  (*pcVar3)(plVar1,"CardGameRoundActionProperties",uVar2,StaticNew);
+  StaticClassInit();
+  return sClass;
+}
+
+
+/* CardGameRoundActionProperties::GetClass() const */
+
+long * CardGameRoundActionProperties::GetClass(void)
+
+{
+  long *plVar1;
+  undefined8 uVar2;
+  code *pcVar3;
+  
+  if (sClass != (long *)0x0) {
+    return sClass;
+  }
+  plVar1 = (long *)Sexy::RtClass::StaticNew();
+  pcVar3 = *(code **)(*plVar1 + 0x50);
+  sClass = plVar1;
+  uVar2 = PropertySheetBase::StaticGetClass();
+  (*pcVar3)(plVar1,"CardGameRoundActionProperties",uVar2,StaticNew);
+  StaticClassInit();
+  return sClass;
+}
+

@@ -1,0 +1,54 @@
+// Class: DownloadPath
+
+
+/* DownloadPath::~DownloadPath() */
+
+void __thiscall DownloadPath::~DownloadPath(DownloadPath *this)
+
+{
+  PVZVersion::~PVZVersion((PVZVersion *)(this + 0x18));
+  std::string::~string((string *)(this + 0x10));
+  std::string::~string((string *)(this + 8));
+  std::string::~string((string *)this);
+  return;
+}
+
+
+/* DownloadPath::DownloadPath(DownloadPath const&) */
+
+void __thiscall DownloadPath::DownloadPath(DownloadPath *this,DownloadPath *param_1)
+
+{
+  FUN_05475d88();
+  FUN_05475d88(this + 8,param_1 + 8);
+  FUN_05475d88(this + 0x10,param_1 + 0x10);
+  PVZVersion::PVZVersion((PVZVersion *)(this + 0x18),(PVZVersion *)(param_1 + 0x18));
+  return;
+}
+
+
+/* DownloadPath::TEMPNAMEPLACEHOLDERVALUE(DownloadPath const&) */
+
+DownloadPath * __thiscall DownloadPath::operator=(DownloadPath *this,DownloadPath *param_1)
+
+{
+  thunk_FUN_05475e00();
+  thunk_FUN_05475e00(this + 8,param_1 + 8);
+  thunk_FUN_05475e00(this + 0x10,param_1 + 0x10);
+  PVZVersion::operator=((PVZVersion *)(this + 0x18),(PVZVersion *)(param_1 + 0x18));
+  return this;
+}
+
+
+/* DownloadPath::DownloadPath() */
+
+void __thiscall DownloadPath::DownloadPath(DownloadPath *this)
+
+{
+  Set8BytesTo0();
+  Set8BytesTo0(this + 8);
+  Set8BytesTo0(this + 0x10);
+  PVZVersion::PVZVersion((PVZVersion *)(this + 0x18));
+  return;
+}
+
